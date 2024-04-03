@@ -1,0 +1,43 @@
+USE testdb;
+
+
+-- Task 1
+
+-- SELECT company, COUNT(id)
+-- FROM products
+-- GROUP BY company;
+
+
+
+-- Task 2
+
+-- SELECT company, MAX(price) as max, MIN(price) as min, AVG(price) as avg
+-- FROM products
+-- GROUP BY company;
+
+
+
+-- Task 3
+
+-- SELECT company,ROUND(SUM(price)) as sum
+-- FROM products
+-- GROUP BY company;
+
+
+
+-- Task 4
+
+-- SELECT company, ROUND(SUM(price)) as sum
+-- FROM products
+-- GROUP BY company
+-- HAVING sum > 2000;
+
+
+
+-- Task 5
+
+-- SELECT company, ROUND(MIN(price)) as min, ROUND(MAX(price
+-- )) as max, COUNT(id) as amount
+-- FROM products
+-- GROUP BY company
+-- HAVING amount > 2;

@@ -1,0 +1,63 @@
+use testdb;
+
+-- Task 6
+
+-- SELECT city, COUNT(id) as amount
+-- FROM users
+-- GROUP BY city;
+
+
+
+-- Task 7
+
+-- ALTER TABLE users ADD salary int;
+
+-- SELECT name, city, MAX(salary) AS maxSalary
+-- FROM users
+-- GROUP BY name, city
+-- ORDER BY maxSalary desc
+-- LIMIT 1;
+
+
+
+-- Task 8
+
+-- SELECT city, ROUND(MIN(age)) AS min, ROUND(MAX(age)) AS max, ROUND(AVG(age)) AS avg
+-- FROM users
+-- GROUP BY city;
+
+
+
+-- Task 9
+
+-- SELECT city, COUNT(id) as SEs
+-- FROM users
+-- WHERE work_position='Software Engineer' AND salary > 200
+-- GROUP BY city;
+
+
+
+-- Task 10
+
+-- SELECT city, name, ROUND(AVG(salary)) as salary  
+-- FROM users
+-- WHERE work_position='Marketing Manager' AND gender='Female'
+-- GROUP BY city, name;
+
+
+
+-- Task 11
+
+-- SELECT city, name, email, ROUND(AVG(age)) AS age  
+-- FROM users
+-- WHERE email NOT LIKE '%gmail.com'
+-- GROUP BY city, name, email;
+
+
+
+-- Task 12
+
+-- SELECT city, name, MAX(age) as age  
+-- FROM users
+-- WHERE (city='Dnipro' OR city='Kyiv') AND gender='Male' AND email LIKE '%example.com'
+-- GROUP BY city, name;
